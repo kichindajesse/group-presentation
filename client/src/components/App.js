@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Login from "../pages/Login";
 import RecipeList from "../pages/RecipeList";
 import NewRecipe from "../pages/NewRecipe";
+import Youtube from "./Youtube";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -26,6 +27,9 @@ function App() {
         <Switch>
           <Route path="/new">
             <NewRecipe user={user} />
+          </Route>
+          <Route path="/video">
+            <Youtube videoId="8m7talgVVJM" />
           </Route>
           <Route path="/">
             <RecipeList />
